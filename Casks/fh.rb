@@ -25,7 +25,7 @@ cask "fh" do
 
   name "fh"
   desc "Factor House command-line interface for Kpow, Flex, Iglu and Factor Platform"
-  homepage "https://factorhouse.io"
+  homepage "https://factorhouse.io/"
 
   livecheck do
     skip "Auto-generated on release."
@@ -33,9 +33,9 @@ cask "fh" do
 
   binary "fh"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/fh"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "fh"], chdir: "."
     end
   end
 
