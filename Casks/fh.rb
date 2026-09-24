@@ -6,25 +6,25 @@ cask "fh" do
     end
   end
 
-  version "0.9.1"
+  version "1.0"
 
   on_macos do
     on_arm do
-      sha256 "a443b6212dede09796355bd1b05ee1e10eb38fae161e53061c92fb61ca9e3046"
+      sha256 "f3705d1d8fa14a729c6edade9f10e24469a313d30aeac0b7e7885df1d2a0288e"
       url "https://downloads.factorhouse.io/fh/v#{version}/fh_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "bb8d2565b8267c18f973fb1200d412bc372693b63986468d32d95f82a835f1b1"
+      sha256 "528774bdb9fb3e8012469d50c1f6506531d03590c6a8acb1376ff89bd9234c24"
       url "https://downloads.factorhouse.io/fh/v#{version}/fh_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "6add040389a701f1835ba0ef29b82a47ce6d441fc2f4831d3983c94e8a000443"
+      sha256 "c661a03781d562e6fbb9c50451192bf055b00f7f5f5130bd9270f76a2cdc0960"
       url "https://downloads.factorhouse.io/fh/v#{version}/fh_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ac4071e155b616ad619d72abb14a6de3873c4cd5bc718e3146bcc21b26d5a630"
+      sha256 "c90ead32c3a8828b4b7a10dbc417ca35ef08714a467f6eccec43125d37502403"
       url "https://downloads.factorhouse.io/fh/v#{version}/fh_#{version}_linux_amd64.tar.gz"
     end
   end
